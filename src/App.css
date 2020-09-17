@@ -1,0 +1,68 @@
+.App{
+  text-align: center;
+  background: #fbfbfb;
+}
+.App-logo{
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (min-width: 1200px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1440px!important;
+  }
+}
+@media  (max-width: 700px){
+  /* For mobile phones: */
+  [class*="col-md-2"] {
+    width: 35%;
+  }
+  .card-default{
+    max-height:none;
+    width: 28rem;
+  }
+}
+@media screen and (min-device-width: 700px) and (max-device-width: 1024px) { 
+   /* For mobile phones: */
+   [class*="col-md-2"] {
+    width: 35%;
+  }
+  .card-default{
+    max-height:none;
+    width: 18rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.loader-position{
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
