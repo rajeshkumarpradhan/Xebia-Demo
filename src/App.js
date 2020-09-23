@@ -1,23 +1,27 @@
 import React from 'react';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import './css/style.css';
 
-
+// Importing components
+import ErrorBoundary from "./shared/errorHandler";
+import LoginComponent from "./components/loginComponent";
+import PlanetComponent from "./components/planetComponent";
 
 function App() {
   return (
     <div className="App">
-      <h1>dd</h1>
-      {/* <ErrorBoundary>
+      <ErrorBoundary>
         <Router>
-          <Header/>
             <Switch>
-              <Route path="/" component={LaunchContainer}>
+              <Route path="/planets" component={PlanetComponent}>
+              </Route>
+              <Route path="/" component={LoginComponent}>
               </Route>
             </Switch>
         </Router>
-        </ErrorBoundary> */}
+        </ErrorBoundary>
     </div>
   );
 }

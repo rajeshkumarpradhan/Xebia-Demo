@@ -1,0 +1,6 @@
+export const LOGIN_REQUEST = "LOGIN_REQUEST";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_ERROR = "LOGIN_ERROR";
+export const PLANET_REQUEST = "PLANET_REQUEST";
+export const PLANET_SUCCESS = "PLANET_SUCCESS";
+export const PLANET_ERROR = "PLANET_ERROR";
